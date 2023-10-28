@@ -1,3 +1,5 @@
+//使用node.js運行，透過cmd cd到該程式路徑並輸入node script.js即可生成csv file
+
 const fs = require('fs');
 
 function getRandomClass() {
