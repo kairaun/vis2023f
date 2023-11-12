@@ -1,0 +1,14 @@
+{
+  "name": "bce2fa5e282eaabd",
+  "main": "bce2fa5e282eaabd@17.js",
+  "version": "17.0.0",
+  "homepage": "https://observablehq.com/d/bce2fa5e282eaabd",
+  "author": {
+    "name": "K41's Workspace",
+    "url": "https://observablehq.com/@k41-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
