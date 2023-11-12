@@ -17,7 +17,13 @@
 <!-- https://alexlenail.me/NN-SVG/about.html -->
 <link rel="icon" href="../hw00/favicon.svg"/>
 <style type="text/css">
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap'); */
+
+  @font-face {
+    font-family:'CircleFont'; 
+    src: url(https://github.com/Circle472/ct2022s/raw/main/hw04/CircleFont_v2.woff2);
+  }
 
   table {
   border-collapse: collapse;
@@ -44,7 +50,7 @@
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       outline:none;
       font-size: 14px;
-      font-family: Trebuchet, Arial, sans-serif;
+      font-family: 'CircleFont', Trebuchet, Arial, sans-serif;
       font-weight: bold;
       cursor:pointer;
       border:1px solid #ddd;
@@ -79,7 +85,7 @@
   body {
     background-color: rgb(106, 76, 156); /* #6A4C9C */
     color: rgb(106, 76, 156);
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'CircleFont', 'Noto Serif JP', serif;
   }
 
   .container-fluid {
@@ -177,15 +183,25 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
+      <div class="col-md-12 twenty">
+        打開作品集資料夾 (GitHub 倉庫 vis2023f 傳送門) 
+        <hr>
+        <input type="button" name="back" onclick="location.href='https://github.com/kairaun/vis2023f/tree/main/'" value="按我  ٩(｡・ω・｡)و   前往倉庫"> 
+        記得將 tjhsieh 改成你的 GitHub 帳號
+      </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
     <div class="col-md-12 twenty">
-      該次作業程式碼，請放在 https://github.com/<span style="color:red;">你的帳號</span>/vis2023f/hw<span style="color:red;">09</span>/src/ 檔案夾。
+      <h3>心得報告(100字)</h3>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次我們去了師大美術館進行一天的參訪，並在現場透過APP導覽，四處參觀欣賞畫作的同時也得要完成APP的課題，都完成後便是拍攝，整體過程很開心也體驗很多趣味；Unity我本身有在接觸沒什麼問題，在Blender方面則是有點不會弄，在轉換影片至fbx的部分也因問我升級顯卡導致無法轉換，但最後還是弄好並順利完成本次作業。
     </div>
   </div>
 
@@ -201,32 +217,103 @@
         </tr>
         <tr>
           <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>2</td>
-          <td>Simple baseline - 描述、描述、描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
+          <td id='m1'>1</td>
+          <td>Simple baseline - 在場景中加入虛擬解說員</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>6</td>
-          <td>Medium baseline - 描述、描述、描述 </td>
+          <td id='m2'>1</td>
+          <td>Simple baseline - 繳交預演版影片與音檔</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>2</td>
-          <td>Strong baseline - 描述、描述、描述 </td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
+          <td id='m3'>1</td>
+          <td>Simple baseline - 繳交正式版影片與音檔</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td id='m4'>3</td>
+          <td>Medium baseline - 虛擬解說員進行解說</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked></td>
+          <td id='m5'>2</td>
+          <td>Medium baseline - 繳交左右對照影片</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox6"></td>
+          <td id='m6'>2</td>
+          <td>Strong baseline - 加入臉部表情：眨眼、動嘴巴 </td>
         </tr>
       </table>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Simple baseline - 產生 Dummy CSV 虛構成績表</h4>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF" src="./src-easy/index.html"></iframe>
+      <!--
       <video id="video1" style="width:100%;max-width:100%;" controls="">
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
       </video>
+      -->
     </div>
   </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Medium baseline - 繪製 v3 蘋果成績表</h4>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF" src="./src-medium-v3/index.html"></iframe>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Medium baseline - 繪製 v7 蘋果成績表</h4>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF" src="./src-medium-v7/index.html"></iframe>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Strong baseline - 參考<a href="https://observablehq.com/@d3/gallery?utm_source=d3js-org&utm_medium=nav&utm_campaign=try-observable">D3畫廊</a>，繪製嶄新的成績表</h4>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF" src="./src-strong/index.html"></iframe>
+    </div>
+  </div>
+
 
   <!-- ------------------------------------------------>
 
@@ -247,7 +334,6 @@
   d3.select("#myCheckbox4").on("change",update);
   d3.select("#myCheckbox5").on("change",update);
   d3.select("#myCheckbox6").on("change",update);
-  d3.select("#myCheckbox7").on("change",update);
 
   update();
   
@@ -266,10 +352,22 @@
     if (d3.select("#myCheckbox3").property("checked")){
       score += parseInt(d3.select('#m3').html());   
     }
+    if (d3.select("#myCheckbox4").property("checked")){
+      score += parseInt(d3.select('#m4').html());
+    }
+
+    if (d3.select("#myCheckbox5").property("checked")){
+      score += parseInt(d3.select('#m5').html());   
+    }
+
+    if (d3.select("#myCheckbox6").property("checked")){
+      score += parseInt(d3.select('#m6').html());   
+    }
 
     d3.select("#myTotal").html(score);    
   }
 </script>
+
 
 </body>
 </html>
