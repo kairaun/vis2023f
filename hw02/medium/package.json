@@ -1,0 +1,14 @@
+{
+  "name": "1470f55de0b29154",
+  "main": "1470f55de0b29154@20.js",
+  "version": "20.0.0",
+  "homepage": "https://observablehq.com/d/1470f55de0b29154",
+  "author": {
+    "name": "K41's Workspace",
+    "url": "https://observablehq.com/@k41-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
