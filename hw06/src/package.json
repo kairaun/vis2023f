@@ -1,0 +1,14 @@
+{
+  "name": "b2d3f0ea48cb9595",
+  "main": "b2d3f0ea48cb9595@83.js",
+  "version": "83.0.0",
+  "homepage": "https://observablehq.com/d/b2d3f0ea48cb9595",
+  "author": {
+    "name": "K41's Workspace",
+    "url": "https://observablehq.com/@k41-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
